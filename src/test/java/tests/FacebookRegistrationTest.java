@@ -33,8 +33,6 @@ public class FacebookRegistrationTest extends BaseTest {
 
         page.getPronounSelect().shouldBe(visible);
 
-        page.selectPronoun("She: \"Wish her a happy birthday!\"");
-
         page.selectFemaleGender();
 
         page.getPronounSelect().shouldBe(hidden);
